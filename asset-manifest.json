@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/caos-rpg-v3/static/css/main.9eb74cb2.css",
+    "main.js": "/caos-rpg-v3/static/js/main.06d4d8c9.js",
+    "static/js/453.e0dc7a1e.chunk.js": "/caos-rpg-v3/static/js/453.e0dc7a1e.chunk.js",
+    "index.html": "/caos-rpg-v3/index.html",
+    "main.9eb74cb2.css.map": "/caos-rpg-v3/static/css/main.9eb74cb2.css.map",
+    "main.06d4d8c9.js.map": "/caos-rpg-v3/static/js/main.06d4d8c9.js.map",
+    "453.e0dc7a1e.chunk.js.map": "/caos-rpg-v3/static/js/453.e0dc7a1e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9eb74cb2.css",
+    "static/js/main.06d4d8c9.js"
+  ]
+}

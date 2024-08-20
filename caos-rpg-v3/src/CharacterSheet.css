@@ -1,0 +1,168 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinha ao topo */
+    height: 100vh;
+    padding: 0 20px;
+    overflow-y: auto; /* Permite rolagem vertical */
+}
+
+.character-sheet {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    overflow-y: auto; /* Permite rolagem vertical */
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.basic-info {
+    display: flex;
+    flex-grow: 1;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.name-field {
+    flex-grow: 2;
+}
+
+.name-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.level-hp-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.level-field, .hp-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.small-input {
+    width: 80px; /* Ajustado para 4 casas decimais */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.hp-inputs {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.advantages-disadvantages {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    height: 300px;
+}
+
+.advantages-disadvantages > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.advantages-disadvantages textarea {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    overflow-y: auto;
+    max-height: 500px; /* Tamanho fixo com scroll */
+}
+
+.item-section .textarea-container {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    overflow-y: auto;
+    height: 300px;
+    max-height: 200px; /* Tamanho fixo com scroll */
+}
+
+/* Adicionado para layout de AttributeTable e pontos */
+.attribute-and-points-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.points-stress-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-left: 5px;
+}
+
+/* Media Queries para dispositivos menores */
+@media (max-width: 768px) {
+    .container {
+    align-items: flex-start; /* Alinha ao topo */
+
+    }
+
+    .character-sheet {
+        width: 100%;
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .basic-info, .name-field, .level-hp-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .advantages-disadvantages {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .attribute-and-points-section {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .points-stress-container {
+        width: 100%;
+        align-items: center;
+    }
+
+    .profile-photo {
+        width: 100%;
+        max-width: 150px;
+        height: auto;
+        border-radius: 10px; /* Deixar retangular */
+    }
+}

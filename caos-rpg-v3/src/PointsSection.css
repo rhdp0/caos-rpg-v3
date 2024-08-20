@@ -1,0 +1,71 @@
+.points-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    width: 100%; /* Assegura que a seção ocupe toda a largura disponível */
+    max-width: 400px; /* Define uma largura máxima para manter o layout consistente */
+}
+
+.points-section .section {
+    text-align: center;
+    width: 100%; /* Garante que a seção ocupe toda a largura disponível */
+}
+
+.points-section h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.points-section input {
+    width: 70px;
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.points-section label {
+    margin: 0 5px;
+    font-size: 14px;
+}
+
+/* Media Queries para dispositivos menores */
+@media (max-width: 768px) {
+    .points-section {
+        max-width: 300px; /* Ajusta a largura máxima em dispositivos menores */
+    }
+
+    .points-section h2 {
+        font-size: 14px; /* Reduz o tamanho da fonte dos títulos */
+    }
+
+    .points-section input {
+        width: 60px; /* Reduz a largura dos inputs em telas menores */
+        padding: 4px; /* Ajusta o padding dos inputs */
+        font-size: 12px; /* Reduz o tamanho da fonte dos inputs */
+    }
+
+    .points-section label {
+        font-size: 12px; /* Reduz o tamanho da fonte dos labels */
+    }
+}
+
+@media (max-width: 480px) {
+    .points-section {
+        max-width: 100%; /* Se adapta a telas muito pequenas */
+        gap: 15px; /* Reduz o espaçamento entre os itens */
+    }
+
+    .points-section input {
+        width: 50px; /* Ajusta a largura dos inputs para telas menores */
+        padding: 3px; /* Ajusta o padding dos inputs */
+        font-size: 11px; /* Ajusta o tamanho da fonte dos inputs */
+    }
+
+    .points-section h2 {
+        font-size: 13px; /* Ajusta o tamanho da fonte dos títulos */
+    }
+}

@@ -1,0 +1,46 @@
+.attribute-table {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+    overflow-x: auto;
+}
+
+.attribute-table table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 400px;
+}
+
+.attribute-table th, 
+.attribute-table td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.attribute-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.attribute-input {
+    width: 50px ; /* Largura padrão definida anteriormente */ 
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .attribute-table {
+        width: 100%;
+    }
+
+    .attribute-input {
+        width: 100%;
+        max-width: 60px;
+    }
+}
+

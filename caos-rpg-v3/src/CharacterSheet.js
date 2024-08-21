@@ -54,16 +54,18 @@ function CharacterSheet() {
 
     // Atualiza os pontos de recarga com base no espírito base e no nível
     useEffect(() => {
-        let baseRechargePoints = 3;
+        let calculatedRechargePoints = 3;
 
-        if (attributes.espirito.base >= 2) {
-            const additionalPointsPerLevel = Math.floor(attributes.espirito.base / 2);
-            const totalAdditionalPoints = additionalPointsPerLevel * level;
-            baseRechargePoints += totalAdditionalPoints;
+        if (attributes.espirito.base <= 1) {
+            calculatedRechargePoints += level - 1; // Adiciona 1 ponto de recarga por nível adicional se Espírito <= 1
+        } else if (attributes.espirito.base >= 2) {
+            const additionalPoints = Math.floor(attributes.espirito.base / 2) * level;
+            calculatedRechargePoints += additionalPoints;
         }
 
-        setRechargePoints(baseRechargePoints);
-    }, [attributes.espirito.base, level]);
+        setRechargePoints(calculatedRechargePoints);
+    }, [level, attributes.espirito.base]);
+
 
     return (
         <div className="container">
